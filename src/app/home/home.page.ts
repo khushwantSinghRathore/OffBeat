@@ -1,6 +1,5 @@
 import { Component  } from '@angular/core';
 import { Router } from '@angular/router';
-import { SongslistPage } from '../songslist/songslist.page';
 
 @Component({
   selector: 'app-home', 
@@ -13,6 +12,10 @@ export class HomePage {
 
   songlist(){
     this.router.navigate(['/songslist']);
+  }
+
+  devinfo(){
+    this.router.navigate(['/devinfo']);
   }
 
 }

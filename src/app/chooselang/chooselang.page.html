@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="chevron-back-outline" slot="start" style="padding: 0px 2px; font-size: large;" (click)="GoBack()"></ion-icon> 
+    <ion-title style="padding-left:  0px;"> Choose language</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class='customcard'>
+    <ion-card *ngFor="let i of lang" >
+      <ion-label style="text-align: center;">  {{ i.name }}</ion-label>
+    </ion-card>
+  </div>
+
+  <button class="btnNext" (click)="GoToNext()"> Next </button>
+
+</ion-content>

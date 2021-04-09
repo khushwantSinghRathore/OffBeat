@@ -1,0 +1,19 @@
+.Artist{
+    display: inline-flex;
+    width: 30%;
+    margin: 10px  2px;
+}
+
+.btnNext {
+    text-align: center;
+    background-color:  red;
+    color: white;
+    border-radius: 25px;
+    padding: 0.5em;
+    position: absolute;
+    width: 80%;
+    margin: 0% 10%;
+    bottom: 15px;
+    font-size: large;
+    outline: none;
+}

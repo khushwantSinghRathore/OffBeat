@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="chevron-back-outline" slot="start" style="padding: 0px 2px; font-size: large;" (click)="GoBack()"></ion-icon> 
+    <ion-title style="padding-left:  0px;"> Choose Artist</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="Artist" *ngFor="let i of artist">
+     <ion-card>
+       <img src={{ i.image}}>
+     </ion-card>
+     <ion-label> {{ i.name}}</ion-label>
+  </div>
+
+  <button class="btnNext" (click)="GoToNext()"> Next </button>
+</ion-content>

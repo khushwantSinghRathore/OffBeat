@@ -1,0 +1,61 @@
+
+
+ion-content {
+    --background: none;
+    background-image: url('https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mjd8fHxlbnwwfHx8&auto=format&fit=crop&w=600&q=60');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // filter: blur(2px);
+    // -webkit-filter: blur(2px);
+}
+
+/* Transparent standard */
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+/* Show background if class is active */
+.show-background {
+    border-style: none;
+    background: var(--ion-color-primary);
+}
+
+/* Remove bottom border on md */
+.header-md::after {
+    background-image: none;
+}
+
+/* Remove bottom border on ios */
+.header-ios ion-toolbar:last-child {
+    --border-width: 0;
+}
+
+ion-item {
+    --ion-item-background: transparent;
+    margin: 20px 0px;
+}
+
+.signin {
+    width: 90%;
+    margin: auto;
+    padding: 11px;
+    border-radius: 25px;
+    background-color: red;
+    font-size: small;
+    outline: none;
+}
+
+.btnSignup{
+    width: 90%;
+    margin: auto;
+    padding: 11px;
+    background: transparent;
+    border-color: red;
+    border-radius: 25px;
+    border:groove;
+    margin-top: 60px;
+    outline: none;
+    font-size: small;
+}

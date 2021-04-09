@@ -1,0 +1,23 @@
+ion-card{
+    display: inline-flex;
+    flex: 1;
+    width: 45%;
+    margin: 5% 2.5%; 
+    text-align: center;
+    padding: 2em;
+    font-size: large;
+}
+
+.btnNext {
+    text-align: center;
+    background-color:  red;
+    color: white;
+    border-radius: 25px;
+    padding: 0.5em;
+    position: absolute;
+    width: 80%;
+    margin: 0% 10%;
+    bottom: 15px;
+    font-size: large;
+    outline: none;
+}

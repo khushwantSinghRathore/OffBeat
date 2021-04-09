@@ -1,0 +1,45 @@
+<ion-content fullscreen>
+  <ion-header>
+    <ion-toolbar>
+       <ion-icon name="chevron-back-outline" slot="start" style="padding: 0px 2px; font-size: large;" (click)="GoBack()"></ion-icon> 
+      <ion-title slot="start" style="font-family: sans-serif; font-weight: 600; font-size: large; padding-left: 0px;"> SignIn </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div style="padding-top: 100px; width: 80%; margin: auto;">
+    <ion-item>
+      <ion-icon name="person-sharp" slot="start"></ion-icon>
+      <ion-input type='text' placeholder='Full Name'></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="phone-portrait" slot="start"></ion-icon>
+      <ion-input type='tel' placeholder='Mobile Number'></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+      <ion-input type='email' placeholder='Email Address'></ion-input>
+    </ion-item>
+     
+    <ion-item>
+      <ion-icon name="eye-outline" slot="start"></ion-icon>
+      <ion-input type='password' placeholder='Password'></ion-input>
+    </ion-item>
+  </div>
+
+
+  <div style="width: 80%; text-align: center; margin: auto; margin-top: 100px;">
+    <button class='signin'> Sign Up</button>
+  </div>
+  
+  <div style="text-align: center; margin: 100px 5% 0%;">
+    <ion-label > Or Continue With </ion-label>
+
+    <div style="width: 100%; display: inline-flex;">
+      <button style="background-color: blue; color:white; flex: 1; border-radius: 25px; margin: 5% 2.5%; padding: 4%;">   Facebook</button>
+      <button style="background-color: white; color: black; flex: 1; border-radius: 25px; margin: 5% 2.5%; padding: 4%;"> <ion-icon name="logo-google"></ion-icon>  Googles</button>
+    </div>
+  </div>
+
+</ion-content>
