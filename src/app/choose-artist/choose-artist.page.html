@@ -6,11 +6,11 @@
 </ion-header>
 
 <ion-content>
-  <div class="Artist" *ngFor="let i of artist">
+  <div class="Artist" *ngFor="let i of dataToShow">
      <ion-card>
-       <img src={{ i.image}}>
+       <img src={{  i.picture.thumbnail }}>
      </ion-card>
-     <ion-label> {{ i.name}}</ion-label>
+     <ion-label> {{ i.name }}</ion-label>
   </div>
 
   <button class="btnNext" (click)="GoToNext()"> Next </button>

@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { SignupPage } from './signup.page';
+import { RadioTabsPage } from './radio-tabs.page';
 
-describe('SignupPage', () => {
-  let component: SignupPage;
-  let fixture: ComponentFixture<SignupPage>;
+describe('RadioTabsPage', () => {
+  let component: RadioTabsPage;
+  let fixture: ComponentFixture<RadioTabsPage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SignupPage ],
+      declarations: [ RadioTabsPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(SignupPage);
+    fixture = TestBed.createComponent(RadioTabsPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
