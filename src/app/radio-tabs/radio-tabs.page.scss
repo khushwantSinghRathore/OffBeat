@@ -1,0 +1,107 @@
+ion-content{
+    font-family: sans-serif;
+}
+.settingIcon{
+    margin: 0px 1em;
+    font-size: large;
+}
+
+.headtext{
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: larger;
+}
+
+.headingText{
+    font-size: small;
+    font-family: sans-serif;
+    margin: 0.5em 1em;
+}
+
+.horizontal{
+    padding: 0px 0.4em .5em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.radioChannel{
+    width: 30%;
+    height: 10em;
+    margin: 0.5em;
+    display: inline-block;
+}
+
+.textOver{
+    font-size: medium;
+    font-weight: 550;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text1{
+    color: white;
+    margin: 1em;
+    margin-top: 50%;
+}
+
+.text2{
+    color: white;
+    margin: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    font-size: smaller;
+}
+
+.songtype{
+    width: 5rem;
+    height: 3rem;
+    display: inline-block;
+    margin: 0.4rem;
+    //border-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.songtypename{
+    position: absolute;
+    top: 2%;
+    color: white;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: small;
+    width: 100%;
+}
+
+.RecentSongs{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+.RecentSongTitle{
+    display: block;
+    font-size: xx-small;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 1em;
+}
+
+.pos{
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    font-size: large;
+    color: white;
+}
+
+
+.adcontent{
+    display: inline-block;
+    width: 56%;
+}
+

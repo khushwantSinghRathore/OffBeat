@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="ion-no-border" mode="ios">
   <ion-toolbar>
     <ion-title center>OffBeat</ion-title>
     <ion-icon name="settings-sharp" slot="end" class="settingIcon"></ion-icon>
@@ -9,7 +9,7 @@
   <div class="horizontal">
     <div *ngFor = "let i of art" class="storyArt">
       <ion-avatar>
-        <img src="https://api.time.com/wp-content/uploads/2019/04/taylor-swift-time-100-2019-082.jpg?quality=85&zoom=2">
+        <img src={{i.bg}}>
       </ion-avatar>
       <ion-label class="storyArtName"> Taylor Swift </ion-label>
     </div>
@@ -18,9 +18,9 @@
   <ion-label class="recenttitle"> Recently Played </ion-label>
 
   <div class="horizontal">
-    <div *ngFor = "let i of art" class="RecentSongs">
+    <div *ngFor = "let i of recent" class="RecentSongs">
       <ion-card style="width: 8em; height: 8em;">
-        <img src="https://api.time.com/wp-content/uploads/2019/04/taylor-swift-time-100-2019-082.jpg?quality=85&zoom=2">
+        <img src={{i.bg}}>
       </ion-card>
       <ion-label class="RecentSongTitle"> Taylor Swift </ion-label>
     </div>
@@ -30,7 +30,7 @@
 
   <div class="horizontal">
     <ion-card *ngFor =  "let i of songstype" class="songtype"> 
-        <img src={{i.bg}} style="background-color:green; opacity: 0.6;">
+        <img src={{i.bg}} style="background-color:green; opacity: 0.6; filter: blur(2px);">
         <p class="songtypename"> {{ i.name }} </p>
     </ion-card>
   </div>
@@ -46,7 +46,7 @@
   <div class="horizontal">
     <div *ngFor = "let i of art" class="RecentSongs">
       <ion-card style="width: 8em; height: 8em;">
-        <img src="https://api.time.com/wp-content/uploads/2019/04/taylor-swift-time-100-2019-082.jpg?quality=85&zoom=2">
+        <img src={{i.bg}}>
       </ion-card>
       <ion-label class="RecentSongTitle"> Taylor Swift </ion-label>
     </div>
@@ -56,7 +56,7 @@
 
   <div class="horizontal">
     <ion-card *ngFor =  "let i of songstype" class="songtype"> 
-        <img src={{i.bg}} style="background-color:green; opacity: 0.6;">
+        <img src={{i.bg}} style="background-color:green; opacity: 0.6; filter: blur(2px);">
         <p class="songtypename"> {{ i.name }} </p>
     </ion-card>
   </div>
@@ -64,7 +64,7 @@
   <ion-label class="hozmood"> Recommended for you </ion-label>
 
   <div class="Recomd">
-    <ion-card class="recomdCard" *ngFor =  "let i of songstype" >
+    <ion-card class="recomdCard" *ngFor =  "let i of art" >
       <img src={{i.bg}} height="100px" width="100%" >
     </ion-card>
   </div>

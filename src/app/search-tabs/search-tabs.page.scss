@@ -1,0 +1,84 @@
+.heading{
+    font-size: x-large;
+    max-width: 60%;
+    font-family: sans-serif;
+    font-weight: 550;
+    white-space: pre-line;
+    word-wrap: break-word;
+    word-spacing: 1%;
+    margin: 10%;
+
+}
+
+
+.srchbox{
+    max-width: 96%;
+    margin:  0% 2%;
+}
+
+.headingNewly{
+    font-size: small;
+    max-width: 86%;
+    font-family: sans-serif;
+    font-weight: 550;
+    white-space: pre-line;
+    word-wrap: break-word;
+    word-spacing: 1%;
+    margin: 5% 7%;
+}
+
+.horizontal{
+    //padding: 1em .4em;
+    padding: 0px 0.4em .5em;
+    // display: inline-flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.RecentSongs{
+    display: inline-block;
+    width: 30%;
+}
+
+.RecentSongTitle{
+    display: inline-block;
+    width: 30%;
+    font-size: xx-small;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 0px 4px;
+    padding: 0em 1em;
+}
+
+.songtype{
+    width: 5rem;
+    height: 3rem;
+    display: inline-block;
+    margin: 0.4rem;
+    //border-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.songtypename{
+    position: absolute;
+    top: 2%;
+    color: white;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: small;
+    width: 100%;
+}
+
+.Recomd{
+    width: 100%;
+    margin: 5%;
+}
+
+.recomdCard{
+    width: 27%;
+    margin: 1.5%;
+    display: inline-block;
+}

@@ -1,15 +1,19 @@
 
-
-ion-content {
+ion-content{
+    z-index: -1;
     --background: none;
-    background-image: url('https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mjd8fHxlbnwwfHx8&auto=format&fit=crop&w=600&q=60');
+   // background-image: url('https://images.unsplash.com/photo-1569840471095-ffa5de0c4c33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=282&q=80');
+    background-image:  url('https://images.unsplash.com/photo-1619229667032-e8700319c3c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    // filter: blur(2px);
-    // -webkit-filter: blur(2px);
+
 }
 
+.blur{
+    height: -webkit-fill-available;
+    backdrop-filter: brightness(0.5);
+}
 /* Transparent standard */
 ion-toolbar {
     --background: transparent;
@@ -60,3 +64,4 @@ ion-item {
     outline: none;
     font-size: small;
 }
+

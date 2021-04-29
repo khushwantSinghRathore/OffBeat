@@ -60,6 +60,10 @@ const routes: Routes = [
     path: 'playlist-tabs',
     loadChildren: () => import('./playlist-tabs/playlist-tabs.module').then( m => m.PlaylistTabsPageModule)
   },
+  {
+    path: 'radioplay',
+    loadChildren: () => import('./radioplay/radioplay.module').then( m => m.RadioplayPageModule)
+  },
 ];
 
 @NgModule({

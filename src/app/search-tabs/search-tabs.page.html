@@ -1,9 +1,38 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>searchTabs</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div class="heading">
+    What'd you like to listen today?
+  </div>
+
+  <ion-searchbar class="srchbox" showCancelButton="focus" animated placeholder="Search Song, Album, Playlist etc. " round></ion-searchbar>
+
+  <div class="headingNewly">
+    Newly Launched
+  </div>
+
+  <div class="horizontal">
+    <div *ngFor = "let i of recent" class="RecentSongs">
+      <ion-card style="width: 8em; height: 8em;">
+        <img src={{i.bg}}>
+      </ion-card>
+      <ion-label class="RecentSongTitle"> Taylor Swift </ion-label>
+    </div>
+  </div>
+
+  <div class="headingNewly"> Which Genres you like to listen? </div>
+
+  <div class="horizontal">
+    <ion-card *ngFor =  "let i of songstype" class="songtype"> 
+        <img src={{i.bg}} style="background-color:green; opacity: 0.6;">
+        <p class="songtypename"> {{ i.name }} </p>
+    </ion-card>
+  </div>
+
+  <div class="headingNewly"> Recommended for you </div>
+
+  <div class="Recomd">
+    <ion-card class="recomdCard" *ngFor =  "let i of art" >
+      <img src={{i.bg}} height="100px" width="100%" >
+    </ion-card>
+  </div>
 
 </ion-content>
