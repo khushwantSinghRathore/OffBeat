@@ -36,7 +36,7 @@
   <div class="horizontal">
       <ion-card style="width: 8em; height: 10em; border-radius: 12px;" class="RecentSongs" *ngFor = "let i of art" >
         <img src={{i.bg}} style="width: 100%; height: 75%; border-radius: 12px;">
-        <ion-label class="RecentSongTitle"> Taylor Swift </ion-label>
+        <ion-label class="RecentSongTitle"> {{i.name}} </ion-label>
         <ion-icon name="play" class="pos"></ion-icon>
       </ion-card>
   </div>

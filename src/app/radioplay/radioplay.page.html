@@ -1,5 +1,6 @@
-<ion-content>
-  <div style="width: 100%; height: 40%; background:url({{imageurl}}); background-position: center top;background-repeat: no-repeat; background-size: cover; " >
+<ion-content >
+  <div  style="width: 100%; background:url({{obj.bg}}); background-position: center top;background-repeat: no-repeat; background-size: cover; ">
+    <div style="backdrop-filter: brightness(0.5); padding-bottom: 15%;">
     <ion-header>
       <ion-toolbar>
         <ion-icon name="chevron-back-sharp" slot="start" class="headbtn" (click)="back()"></ion-icon>
@@ -7,13 +8,42 @@
       </ion-toolbar>
     </ion-header>
    
+    <div>
+     <ion-label class="heading1" > {{obj.chlnum}}  {{obj.name}}</ion-label>
+      <ion-label class="heading2"> 12,345,567 Listners</ion-label>
+
+    </div>
     <div class="options">
       <ion-toolbar>
-        <ion-icon name="chevron-back-sharp" slot="start" class="headbtn" (click)="back()"></ion-icon>
-    
-        <ion-icon name="ellipsis-vertical-sharp" slot="end" class="headbtn"></ion-icon>
+        <ion-icon name="heart-outline" slot="start" class="headbtn"></ion-icon>
+        <div class="middlebtn"> <ion-icon name="play-circle"></ion-icon></div>
+        <ion-icon name="share-social" slot="end" class="headbtn"></ion-icon>
       </ion-toolbar>
     </div>
+  </div>
+  </div>
+  <div class="roundcover">
+    <div style="display: block; width: 100%; text-align: center; font-size: xx-large;"> 
+      <ion-icon name="remove" class="midline"></ion-icon>
+
+      <div class="headingText"> Similar Radio Channels </div>
+      <div class="horizontal">
+        <ion-card *ngFor="let a of radioChannel" class="radioChannel" >
+          <img src={{a.bg}} width="100%" height="100%" style="filter: blur(2px);opacity: 0.5; ">
+          <div class="textOver"> 
+            <p class="text1">  {{a.chlnum}}  </p>  
+            <p class="text2"> {{a.name}} </p>
+          </div>
+        </ion-card>
+      </div>
+    </div>
+
+    <div class="horizontal">
+      <ion-card *ngFor =" let ad of ads" class="adcontent">
+        <img src={{ad.src}} height="100px" width="100%">
+      </ion-card>
+    </div>
+
 
   </div>
 

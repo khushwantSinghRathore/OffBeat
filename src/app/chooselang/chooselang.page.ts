@@ -25,7 +25,7 @@ export class ChooselangPage implements OnInit {
   }
 
   GoBack(){
-    this.router.navigateByUrl('home-tabs');
+    this.router.navigateByUrl('tabs/home-tabs');
   }
 
   GoToNext(){
